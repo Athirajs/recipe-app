@@ -7,17 +7,15 @@ import FavoritesPage from './componets/FavoritesPage';
 
 function App() {
   return (
-    <div>
-      <div className="min-h-screen p-6 bg-white text-gray-600 text-lg">
-        <NavigationBar/>
+    <div className="min-h-screen bg-gray-900 text-gray-100">
+      <NavigationBar />
+      <main className="p-6">
         <Routes>
-          <Route path='/' element={<HomePage/>}/>
-          <Route path='/recipe-item/:id' element={<DetailsPage/>}/>
-          <Route path='/favorites' element={<FavoritesPage/>}/>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/recipe-item/:id' element={<DetailsPage />} />
+          <Route path='/favorites' element={<FavoritesPage />} />
         </Routes>
-      
-      </div>
-      
+      </main>
     </div>
   );
 }
